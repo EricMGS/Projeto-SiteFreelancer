@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Configurações</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!--METAS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+</head>
+<style>
+    #content {
+        justify-content: center;
+        align-items: start;
+        padding-top: 70px;
+    }
+    #projetos {
+        width: 800px;
+        height: 900px;
+        justify-content: start;
+    }
+    #projetos h3{
+        line-height: 70px;
+    }
+    #filtros {
+        height: 800px;
+        width: 250px;
+    }
+    #filtros h3 {
+        text-align: center;
+        line-height: 70px;
+    }
+    #filtros span {
+        display: flex;
+        flex-direction: column;
+    }
+    #filtros input {
+        margin-right: 10px;
+    }
+    .projetoAtual {
+        width: inherit;
+        border: 1px solid lightgray;
+        border-width: 1px 0;
+        padding: 15px 15px;
+    }
+    .projetoAtual span{
+        display: flex;
+        justify-content: space-between;
+    }
+    #foto {
+        width: 15%;
+        float: right;
+        margin-right: 10px;
+    }
+    #progress {
+        width: 20%;
+    }
+    #edit {
+        display: flex;
+        width: inherit;
+        justify-content: end;
+        padding-right: 30px;
+    }
+</style>
+<body>
+    <header id="header">
+        <div id="header-left">
+            <a><i class="material-icons">home</i>Home</a>
+            <a><i class="material-icons">search</i>Buscar Projetos</a>
+            <a><i class="material-icons">group</i>Buscar Freelancers</a>
+            <a><i class="material-icons">person</i>Perfil</a>
+            <a><i class="material-icons">email</i>Caixa de entrada</a>
+            <a class="bg-success"><i class="material-icons">settings</i>Configurações</a>
+        </div>
+        <div id="header-right">
+            <a><i class="material-icons">login</i>Login</a>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="projetos" class="box">
+            <h3>Configurações</h3>
+            <div class="projetoAtual">
+                
+                <br>
+                <h4 style="display:inline-block">Configurações de privacidade</h4>
+                <br>
+                <strong style="display:inline">Status: </strong>
+                <select name="filtro"">
+                    <option value="">Disponível</option>
+                </select>
+                <br>
+                <strong>Quem pode entrar em contato</strong>
+                <select>
+                    <option>Todos</option>
+                </select>
+            </div>
+            <div class="projetoAtual">
+                <h4>Senha</h4>
+                <a class="btn btn-link text-danger">Alterar senha</a>
+            </div>
+            <div class="projetoAtual">
+                <h4>Pagamento</h4>
+                <strong>Cartão de crédito</strong>
+                <p>Número: xxxx xxxx xxxx xxxx</p>
+                <p>Banco: Gringotts</p>
+                <p>Agência: xxxx-x</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Projeto de Desenvolvimento de Software</p>
+        <p>Software de contratação de  freelancers</p>
+        <p>Eric Souza - Junho 2020</p>
+    </footer>
+</body>
+</html>

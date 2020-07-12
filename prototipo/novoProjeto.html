@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Projeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!--METAS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+</head>
+<style>
+    #content {
+        justify-content: center;
+        align-items: start;
+        padding-top: 70px;
+    }
+    #projetos {
+        width: 800px;
+        height: 900px;
+        justify-content: start;
+    }
+    #projetos h3{
+        line-height: 70px;
+    }
+    #filtros {
+        height: 800px;
+        width: 250px;
+    }
+    #filtros h3 {
+        text-align: center;
+        line-height: 70px;
+    }
+    #filtros span {
+        display: flex;
+        flex-direction: column;
+    }
+    #filtros input {
+        margin-right: 10px;
+    }
+    .projetoAtual {
+        width: inherit;
+        border: 1px solid lightgray;
+        border-width: 1px 0;
+        padding: 15px 15px;
+    }
+    .projetoAtual span{
+        display: flex;
+        justify-content: space-between;
+    }
+    #foto {
+        width: 15%;
+        float: right;
+        margin-right: 10px;
+    }
+    #progress {
+        width: 20%;
+    }
+    #edit {
+        display: flex;
+        width: inherit;
+        justify-content: end;
+        padding-right: 30px;
+    }
+</style>
+<body>
+    <header id="header">
+        <div id="header-left">
+            <a><i class="material-icons">home</i>Home</a>
+            <a class="bg-success"><i class="material-icons">search</i>Buscar Projetos</a>
+            <a><i class="material-icons">group</i>Buscar Freelancers</a>
+            <a><i class="material-icons">person</i>Perfil</a>
+            <a><i class="material-icons">email</i>Caixa de entrada</a>
+            <a><i class="material-icons">settings</i>Configurações</a>
+        </div>
+        <div id="header-right">
+            <a><i class="material-icons">login</i>Login</a>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="projetos" class="box">
+            <h3>Detalhes do projeto</h3>
+            <div class="projetoAtual">
+                <br>
+                <h4>Sistema ERP Hospitalar
+                    <span class="badge badge-danger" style="width:auto; display:inline">Difícil</span></h4>
+                <small>Prazo restante: 63 dias</small>
+                <br>
+                <strong>Proposta: </strong> R$ 3500,00
+                <br><br>
+                <h5 style="text-decoration: underline;">Descrição</h5>
+                <p>O freelancer deverá desenvolver um sistema ERP para uma rede de hospitais. Os hospitais
+                    contam com diversos setores, cada setor deverá possuir um subsistema próprio que atenda
+                    os requisitos necessitados. O sistema ERP deverá ser feito de forma que possa ser conectado
+                    com o sistema web já existente onde os pacientes podem marcar suas consultas.
+                    <br><br>
+                    Tempo máximo para produção: 1 ano
+                    <br>
+                    Oferta média: R$ 3000,00
+                    <br><br>
+                    <strong>Projeto de software: </strong>Clique no link abaixo para fazer download do pdf do projeto de
+                    software com todas as informações detalhadas.
+                </p>
+                <button class="btn btn-link">Projeto de software</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Projeto de Desenvolvimento de Software</p>
+        <p>Software de contratação de  freelancers</p>
+        <p>Eric Souza - Junho 2020</p>
+    </footer>
+</body>
+</html>

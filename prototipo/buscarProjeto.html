@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Buscar Projeto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!--METAS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+</head>
+<style>
+    #content {
+        justify-content: center;
+        align-items: start;
+        padding-top: 70px;
+    }
+    #projetos {
+        width: 800px;
+        height: 900px;
+        justify-content: start;
+    }
+    #projetos h3{
+        line-height: 70px;
+    }
+    #filtros {
+        height: 800px;
+        width: 200px;
+    }
+    #filtros h3 {
+        text-align: center;
+        line-height: 70px;
+    }
+    #filtros span {
+        display: flex;
+        flex-direction: column;
+    }
+    #filtros input {
+        margin-right: 10px;
+    }
+    .projetoAtual {
+        width: inherit;
+        border: 1px solid lightgray;
+        border-width: 1px 0;
+        padding: 15px 15px;
+    }
+    .projetoAtual span{
+        display: flex;
+        justify-content: space-between;
+    }
+    #projetos span {
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    #projetos span input {
+        height: 38px;
+    }
+</style>
+<body>
+    <header id="header">
+        <div id="header-left">
+            <a><i class="material-icons">home</i>Home</a>
+            <a class="bg-success"><i class="material-icons">search</i>Buscar Projetos</a>
+            <a><i class="material-icons">group</i>Buscar Freelancers</a>
+            <a><i class="material-icons">person</i>Perfil</a>
+            <a><i class="material-icons">email</i>Caixa de entrada</a>
+            <a><i class="material-icons">settings</i>Configurações</a>
+        </div>
+        <div id="header-right">
+            <a><i class="material-icons">login</i>Login</a>
+        </div>
+    </header>
+
+    <div id="content">
+        <div id="filtros" class="box" style="justify-content: start;">
+            <h3>Filtros</h3>
+            <span>
+                <strong>Ordenação</strong>
+                <a href="">Por data</a>
+                <a href="">Por relevância</a>
+                <a href="">Por dificuldade</a>
+                <a href="">Por valor</a>
+                <hr>
+                <strong>Categoria</strong>
+                <p><input type="checkbox">Web</p>
+                <p><input type="checkbox">Mobile</p>
+                <p><input type="checkbox">Desktop</p>
+                <p><input type="checkbox">Design</p>
+                <p><input type="checkbox">Digitação</p>
+                <p><input type="checkbox">Planilha</p>
+                <p><input type="checkbox">Manutenção</p>
+            </span>
+        </div>
+        <div id="projetos" class="box">
+            <h3>Projetos</h3>
+            <span>
+                <input type="text" placeholder="Buscar">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul> 
+            </span>
+            <div class="projetoAtual">
+                <h4>Plataforma web de ensino</h4>
+                <span>
+                    <p>Publicado a 25 dias</p>
+                    <p>Dificuldade: Fácil</p>
+                </span>
+                <p>Proposta: R$ 580,00</p>
+            </div>
+            <div class="projetoAtual">
+                <h4>Sistema ERP Hospitalar</h4>
+                <span>
+                    <p>Publicado a 63 dias</p>
+                    <p>Dificuldade: Difícil</p>
+                </span>
+                <p>Proposta: R$ 3500,00</p>
+            </div>
+            <div class="projetoAtual">
+                <h4>Design de logotipo</h4>
+                <span>
+                    <p>Publicado a 3 dias</p>
+                    <p>Dificuldade: Intermediário</p>
+                </span>
+                <p>Proposta: R$ 200,00</p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <p>Projeto de Desenvolvimento de Software</p>
+        <p>Software de contratação de  freelancers</p>
+        <p>Eric Souza - Junho 2020</p>
+    </footer>
+</body>
+</html>

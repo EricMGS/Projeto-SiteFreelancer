@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <!--METAS-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ICONS-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--BOOTSTRAP-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+</head>
+<style>
+    #content {
+        align-items: center;
+    }
+    #perfil {
+        border-radius: 20px;
+        box-shadow: 0 0 3px black;
+        height: 400px;
+        background-color: white;
+        text-align: center;
+    }
+    #perfil p {
+        text-align: start;
+        line-height: 10px;
+    }
+    #perfil #pConfiabilidade {
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    #foto {
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    #carteira {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 3px black;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #totalProjetos {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 3px black;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #projetos {
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 0 3px black;
+        position: absolute;
+        left: 0;
+        height: 800px;
+        width: inherit;
+        margin-top: 30px;
+    }
+    #projetos h3{
+        line-height: 60px;
+        text-align: center;
+        padding: 0 10px;
+    }
+    #projetos span {
+        display: flex;
+        justify-content: space-between;
+    }
+    .projetoAtual {
+        width: inherit;
+        border: 1px solid lightgray;
+        border-width: 1px 0;
+        padding-top: 15px;
+    }
+    .projetoAtual span{
+        display: flex;
+        justify-content: space-between;
+    }
+
+</style>
+<body>
+    <header id="header">
+        <div id="header-left">
+            <a class="bg-success"><i class="material-icons">home</i>Home</a>
+            <a><i class="material-icons">search</i>Buscar Projetos</a>
+            <a><i class="material-icons">group</i>Buscar Freelancers</a>
+            <a><i class="material-icons">person</i>Perfil</a>
+            <a><i class="material-icons">email</i>Caixa de entrada</a>
+            <a><i class="material-icons">settings</i>Configurações</a>
+        </div>
+        <div id="header-right">
+            <i class="material-icons">login</i>Login
+        </div>
+    </header>
+
+    <div id="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <div id="perfil" class="col-3">
+                    <h4>Perfil</h4>
+                    <img src="perfil.jpeg" id="foto"></img>
+                    <p>Eric Monteiro Galotti de Souza</p>
+                    <p>Programador</p>
+                    <p>Sexo: Masculino</p>
+                    <p>Idade: 20 anos</p>
+                    <p class="btn-link">eric.souza01@fatec.sp.gov.br</p>
+                    <p id="pConfiabilidade">Confiabilidade</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success" style="width:70%"></div>
+                    </div>
+                </div>
+                <div class='col-1'></div>
+                <div id="projects-information" class="col-5">
+                    <div id="pInformation-top" class="row">
+                        <div class="col-5" id="totalProjetos">
+                            <h5>Projetos realizados</h5>
+                            <p>26</p>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="col-5" id="carteira">
+                            <h5>Total ganho</h5>
+                            <p>R$ 7535,00</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div id="projetos" class="col-11">
+                            <h3>Projetos atuais</h3>
+                            <span>
+                                <input type="text" placeholder="Buscar">
+                                <div>
+                                    <label for="filtro">Filtro:</label>
+                                    <select name="filtro">
+                                        <option value="Data">Por data</option>
+                                    </select>
+                                </div>
+                            </span>
+                            <div class="projetoAtual">
+                                <h4>Plataforma web de ensino</h4>
+                                <span>
+                                    <p>Prazo restante: 25 dias</p>
+                                    <p>Dificuldade: Fácil</p>
+                                </span>
+                                <p>Proposta: R$ 580,00</p>
+                            </div>
+                            <div class="projetoAtual">
+                                <h4>Sistema ERP Hospitalar</h4>
+                                <span>
+                                    <p>Prazo restante: 63 dias</p>
+                                    <p>Dificuldade: Difícil</p>
+                                </span>
+                                <p>Proposta: R$ 3500,00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <p>Projeto de Desenvolvimento de Software</p>
+        <p>Software de contratação de  freelancers</p>
+        <p>Eric Souza - Junho 2020</p>
+    </footer>
+</body>
+</html>
